@@ -9,6 +9,8 @@ gem "rails", "3.0.0.beta"
 
 gem "mysql"
 
+gem "rspec-rails", "2.0.0.a6"
+
 ## Bundle the gems you use:
 # gem "bj"
 # gem "hpricot", "0.6"

@@ -1,0 +1,9 @@
+<h1>アカウントの編集</h1>
+ 
+<% form_for @user, :url => account_path do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
+  <%= f.submit "更新" %>
+<% end %>
+ 
+<br /><%= link_to "アカウント情報", account_path %>
