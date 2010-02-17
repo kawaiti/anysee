@@ -1,37 +1,38 @@
 <p>
-  <b>Login:</b>
+  <b>ログイン名：</b>
   <%=h @user.login %>
 </p>
  
 <p>
-  <b>Login count:</b>
+  <b>ログイン回数：</b>
   <%=h @user.login_count %>
 </p>
  
 <p>
-  <b>Last request at:</b>
+  <b>最新リクエスト：</b>
   <%=h @user.last_request_at %>
 </p>
  
 <p>
-  <b>Last login at:</b>
+  <b>前回のログイン日時：</b>
   <%=h @user.last_login_at %>
 </p>
  
 <p>
-  <b>Current login at:</b>
+  <b>今回のログイン日時：</b>
   <%=h @user.current_login_at %>
 </p>
  
 <p>
-  <b>Last login ip:</b>
+  <b>前回のログインIP：</b>
   <%=h @user.last_login_ip %>
 </p>
  
 <p>
-  <b>Current login ip:</b>
+  <b>今回のログインIP：</b>
   <%=h @user.current_login_ip %>
 </p>
  
  
 <%= link_to '編集', edit_account_path %>
+<%= link_to 'ログアウト', user_session_path, :method => :delete %>

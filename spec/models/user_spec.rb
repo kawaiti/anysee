@@ -3,7 +3,7 @@ require 'spec_helper'
 describe User do
   before(:each) do
     @valid_attributes = {
-      
+      :email => "test@newness.jp"    
     }
   end
 
