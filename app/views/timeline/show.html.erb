@@ -1,0 +1,5 @@
+<h1><%= @user.login %></h1>
+<% @whispers.each do |w| %>
+  <p><%= w.content %><br /><%= w.created_at %></p>
+  <hr />
+<% end %>
