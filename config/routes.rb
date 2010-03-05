@@ -61,4 +61,5 @@ Anysee::Application.routes.draw do |map|
 
   map.resource :account, :controller => "users"
   map.resource :users 
+  map.connect "/:login", :controller => "timeline", :action => "show" 
 end
